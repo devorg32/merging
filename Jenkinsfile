@@ -4,7 +4,7 @@ pipeline {
         stage('check conflits') {
             steps {
               sh label: '', script: '''git clone https://github.com/devorg32/merging.git
-cd mergingconflits
+cd merging
 git checkout master
 git pull
 git merge origin/conflits
